@@ -1,0 +1,730 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-2#"
+     xml:base="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cv-ontology-2="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-2#"
+     xmlns:cv-ontology-3="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-3#"
+     xmlns:cv-ontology-lima="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#attendedCollegeIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#attendedCollegeIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#College"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#attendedHighSchoolIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#attendedHighSchoolIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#HighSchool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#canBeFoundOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#canBeFoundOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#codesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#codesIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#knows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#knows">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Database"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#speaks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#speaks">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#won -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#won">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#workedAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#workedAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#workedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#workedOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#course -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#course">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#College"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#dateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#dateOfBirth">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#endTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#entity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#entity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Skills"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Skills"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#path -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#path">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#place -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#place">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#startTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#College -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#College">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Database">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education"/>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#HighSchool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#HighSchool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link"/>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#attendedCollegeIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#College"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#attendedHighSchoolIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#HighSchool"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#canBeFoundOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#codesIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#knows"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Database"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#speaks"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#won"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#workedAs"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#workedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Skills"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/resource/English_language -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/English_language">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#English"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Faculdade_de_Engenharia_da_Universidade_do_Porto -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Faculdade_de_Engenharia_da_Universidade_do_Porto">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#FEUP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/French_language -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/French_language">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#French"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Github -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Github">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Github"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Linkdin -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Linkdin">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#LinkdIn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/MongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/MongoDB">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#MongoDB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/NodeJs -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/NodeJs">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#NodeJs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/Portuguese_language -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Portuguese_language">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Portuguese"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/PostgreSQL -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/PostgreSQL">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#PostgreSQL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/SQLite -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/SQLite">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#SQLite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/C++ -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/C++">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#C++"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/resource/React_(JavaScript_library) -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/React_(JavaScript_library)">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#React"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#English">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Language"/>
+        <cv-ontology-lima:name>English</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#FEUP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#FEUP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#College"/>
+        <cv-ontology-lima:course>BSC+MSC IN INFORMATICS AND COMPUTING ENGINEERING</cv-ontology-lima:course>
+        <cv-ontology-lima:endTime>Present</cv-ontology-lima:endTime>
+        <cv-ontology-lima:name>Faculdade de Engenharia da Universidade do Porto</cv-ontology-lima:name>
+        <cv-ontology-lima:startTime>September 2016</cv-ontology-lima:startTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#French -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#French">
+        <cv-ontology-lima:name>French</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Github -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Github">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link"/>
+        <cv-ontology-lima:name>github</cv-ontology-lima:name>
+        <cv-ontology-lima:path>https://github.com/susanalima</cv-ontology-lima:path>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#IntercompanyModule -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#IntercompanyModule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+        <cv-ontology-lima:description>Co-implemented an Intercompany Module, integrated with Primavera’s Jasmin Platform, making use of a customizable interface to handle all the transactions between two different companies.</cv-ontology-lima:description>
+        <cv-ontology-lima:endTime>December 2019</cv-ontology-lima:endTime>
+        <cv-ontology-lima:entity>Primavera Software</cv-ontology-lima:entity>
+        <cv-ontology-lima:name>Intercompany Module</cv-ontology-lima:name>
+        <cv-ontology-lima:startTime>September 2019</cv-ontology-lima:startTime>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#IntercompanyModule"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#entity"/>
+        <owl:annotatedTarget>Primavera Software</owl:annotatedTarget>
+        <rdfs:seeAlso>http://dbpedia.org/page/Primavera_(software)</rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#LinkdIn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#LinkdIn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Link"/>
+        <cv-ontology-lima:name>LinkdIn</cv-ontology-lima:name>
+        <cv-ontology-lima:path>https://www.linkedin.com/in/susana-lima-96b90a1a1/</cv-ontology-lima:path>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#MediaFestival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#MediaFestival">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Award"/>
+        <cv-ontology-lima:description>&quot;We are not alone&quot;: creation of an one-minute film that highlights the unimaginable variety of life forms that surrounds the everyday environment.</cv-ontology-lima:description>
+        <cv-ontology-lima:endTime>November 2015</cv-ontology-lima:endTime>
+        <cv-ontology-lima:name>EUROPEANS CIENCE TV AND NEW MEDIA FESTIVAL</cv-ontology-lima:name>
+        <cv-ontology-lima:place rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</cv-ontology-lima:place>
+        <cv-ontology-lima:startTime>September 2015</cv-ontology-lima:startTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#MongoDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#MongoDB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Database"/>
+        <cv-ontology-lima:name>MongoDB</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#NodeJs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#NodeJs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming"/>
+        <cv-ontology-lima:name>NodeJs</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#PLANETarianHumanCare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#PLANETarianHumanCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Project"/>
+        <cv-ontology-lima:description>Worked in a team of eight students to design and implement PLANETarian HumanCare, a lightweight management software solution that allows information of people and activities to be organized and accessible to the various workers in an aid zone.</cv-ontology-lima:description>
+        <cv-ontology-lima:endTime>January 2020</cv-ontology-lima:endTime>
+        <cv-ontology-lima:name>PLANETarian HumanCare</cv-ontology-lima:name>
+        <cv-ontology-lima:startTime>September 2019</cv-ontology-lima:startTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Portuguese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Portuguese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Language"/>
+        <cv-ontology-lima:name>Portuguese</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#PostgreSQL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#PostgreSQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Database"/>
+        <cv-ontology-lima:name>PostgreSQL</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#ProfessorAssistant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#ProfessorAssistant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Job"/>
+        <cv-ontology-lima:description>Worked as Professor Assistant for the Compilers class</cv-ontology-lima:description>
+        <cv-ontology-lima:endTime>Present</cv-ontology-lima:endTime>
+        <cv-ontology-lima:entity>Faculdade de Engenharia da Universidade do Porto</cv-ontology-lima:entity>
+        <cv-ontology-lima:name>Professor Assistant</cv-ontology-lima:name>
+        <cv-ontology-lima:startTime>March 2020</cv-ontology-lima:startTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#React -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#React">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming"/>
+        <cv-ontology-lima:name>React</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#SQLite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#SQLite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Database"/>
+        <cv-ontology-lima:name>SQLite</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Susana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Susana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Person"/>
+        <cv-ontology-lima:attendedCollegeIn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#FEUP"/>
+        <cv-ontology-lima:canBeFoundOn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Github"/>
+        <cv-ontology-lima:canBeFoundOn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#LinkdIn"/>
+        <cv-ontology-lima:codesIn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#NodeJs"/>
+        <cv-ontology-lima:codesIn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#React"/>
+        <cv-ontology-lima:codesIn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#C++"/>
+        <cv-ontology-lima:knows rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#MongoDB"/>
+        <cv-ontology-lima:knows rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#PostgreSQL"/>
+        <cv-ontology-lima:knows rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#SQLite"/>
+        <cv-ontology-lima:speaks rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#English"/>
+        <cv-ontology-lima:speaks rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#French"/>
+        <cv-ontology-lima:speaks rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Portuguese"/>
+        <cv-ontology-lima:won rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#MediaFestival"/>
+        <cv-ontology-lima:workedAs rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#ProfessorAssistant"/>
+        <cv-ontology-lima:workedOn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#IntercompanyModule"/>
+        <cv-ontology-lima:workedOn rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#PLANETarianHumanCare"/>
+        <cv-ontology-lima:dateOfBirth>22/01/1998</cv-ontology-lima:dateOfBirth>
+        <cv-ontology-lima:gender>female</cv-ontology-lima:gender>
+        <cv-ontology-lima:name>Susana Lima</cv-ontology-lima:name>
+        <cv-ontology-lima:nationality>Portuguese</cv-ontology-lima:nationality>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Susana"/>
+        <owl:annotatedProperty rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#nationality"/>
+        <owl:annotatedTarget>Portuguese</owl:annotatedTarget>
+        <rdfs:seeAlso>http://dbpedia.org/page/Portugal</rdfs:seeAlso>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#C++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#C++">
+        <rdf:type rdf:resource="http://www.semanticweb.org/susana/ontologies/2020/4/cv-ontology-lima#Programming"/>
+        <cv-ontology-lima:name>C++</cv-ontology-lima:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
